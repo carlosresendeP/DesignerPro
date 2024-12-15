@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Poppins", serif;
+    background-color: #191324;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100vw;
+    height: 50px;
+
+    background-color: transparent;
+    position: fixed;
+    z-index: 10;
+}
+
+header div{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-title{
+    font-weight: bold;
+    font-size: 42px;
+    margin-left: 5%;
+    color: #C3C3C3;
+}
+
+header .logo-title .highlight{
+    color: #00BD90;
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .navbar li a{
+    color: #C3C3C3;
+    font-size: 20px;
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+}
+
+header .navbar li a:hover{
+    color: #6C5DB7;
+    text-shadow: 0 0 10px #7B509A;
+    filter: brightness(170%);
+    border-bottom: 1px solid #6C5DB7;
+    padding-bottom: 10px ;
+}
+
+.btn{
+    width: 250px;
+    height: 50px;
+    background-color: #110B31;
+    outline: none;
+    border: 1px solid #6C5DB7;
+    color: #7B509A;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    margin-right: 5%;
+    font-family: "Poppins", serif;
+    transition: all 0.3s ease-in-out;
+}
+
+header .btn:hover{
+    background-color: #6C5DB7;
+    color: #110B31;
+    border: 1px solid #110B31;
+    filter: brightness(170%);
+    transform: translateY(2px);
+}
+
+
+
+.container{
+    position: relative;
+}
+
+
+
+/*HERO CLASS*/
+.hero{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.hero .background{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.hero .hero-box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 5%;
+    transform: translateY(50%);
+    width: 1013px;
+}
+
+.hero .hero-box h2{
+    font-size: 70px;
+    color: #C3C3C3;
+}
+
+.hero .hero-box .highlight{
+    color: #6C5DB7;
+}
+.hero .hero-box .highlight:nth-child(2){
+    color: #00BD90;
+}
+
+.hero .hero-box p{
+    font-size: 25px;
+    color: #C3C3C3;
+    width: 70%;
+}
+
+
+.hero .hero-box .btn{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    margin-top: 15px;
+    padding: 10px;
+    width: 350px;
+    height: 58px;
+}
+
+.hero .hero-box .btn:hover{
+    background-color: #6C5DB7;
+    color: #110B31;
+    filter: brightness(170%);
+    transform: translateY(1px);
+}
+
+
+/*ABOUT CLASS*/
+.about{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(to top, transparent, #191324,#191324, #191324 );
+}
+
+.about .about-box{
+    color: #C3C3C3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 89px;
+}
+
+.about .about-box img{
+    width: 50%;
+    margin-left: 5%;
+}
+
+.about .about-box .texts{
+    width: 50%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-right: 5%;
+}
+
+.about .about-box .texts h5{
+    font-size: 30px;
+    font-weight: 300;
+    color: #6C5DB7;
+}
+.about .about-box .texts h2{
+    font-size: 50px;
+    font-weight: 600;
+    width: 90%;
+}
+
+.about .about-box .texts p{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: auto;
+    letter-spacing: 1px;
+    width: 90%;
+}
+
+.about .about-box .texts .btn{
+    background-color: transparent ;
+    margin-top: 53px;
+    text-transform: uppercase;
+}
+
+.about .background{
+    position: absolute;
+    top: 40px;
+    z-index: -1;
+    object-fit: cover;
+
+}
